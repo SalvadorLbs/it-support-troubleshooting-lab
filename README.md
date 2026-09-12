@@ -25,7 +25,7 @@ The environment combines Windows 11, Microsoft Entra ID, Microsoft 365, Exchange
 - Microsoft 365 licensing troubleshooting
 - Group membership and dynamic groups
 - Role-based access and least privilege
-- User onboarding and offboarding
+- User onboarding, role changes and offboarding
 - Shared mailbox administration
 - Full Access, Send As and Send on Behalf permissions
 - Windows endpoint troubleshooting
@@ -57,35 +57,41 @@ The labs followed a structured support process:
 
 Troubleshot user sign-in failures, disabled accounts, licensing issues, group membership, dynamic groups, password resets, session revocation and role assignments using Microsoft Entra ID.
 
+Joiner, mover and leaver scenarios were also used to practise user lifecycle administration, dynamic group membership and least-privilege access.
+
 ### Microsoft 365 and Exchange Online
 
 Configured and troubleshot shared mailbox access, Full Access, Send As and Send on Behalf permissions, permission propagation and Microsoft 365 service licensing.
 
 ### Windows Endpoint Support
 
-Built a Windows 11 virtual workstation and performed practical endpoint troubleshooting using PowerShell and Windows diagnostic tools.
+Built a Windows 11 virtual workstation and performed practical endpoint troubleshooting using PowerShell, Command Prompt and Windows diagnostic tools.
 
 Fault scenarios included incorrect DNS configuration, a stopped Print Spooler service, blocked outbound HTTPS traffic and a disabled network adapter.
 
 ### Intune and MDM
 
-Microsoft Entra joined the Windows 11 workstation and investigated MDM enrolment. Troubleshooting included MDM user scope, device registration status, MDM discovery endpoints and Windows MDM event logs.
+Microsoft Entra joined the Windows 11 workstation and investigated MDM enrolment.
 
-## Example Troubleshooting Scenarios
+Troubleshooting included reviewing MDM user scope, device registration status, MDM discovery endpoints and Windows MDM event logs.
+
+The exercise demonstrated the distinction between Microsoft Entra device registration and Intune device management, as well as the importance of verifying both configuration and observed device state.
+
+## Documented Incidents
 
 Detailed incident documentation in this repository demonstrates the investigation, root cause, resolution and verification process for selected support scenarios.
 
-These include:
+The documented incidents include:
 
-- Microsoft 365 licensing and access
-- User account and sign-in failures
-- User offboarding and least privilege
-- Exchange Online shared mailbox permissions
-- Intune and MDM enrolment
+- Microsoft Entra ID account and sign-in troubleshooting
+- User lifecycle management, including joiner, mover and leaver scenarios
+- Exchange Online shared mailbox troubleshooting
+- Intune and MDM enrolment troubleshooting
 - DNS resolution failure
-- Windows Print Spooler failure
 - HTTPS connectivity blocked by Windows Firewall
 - Disabled Windows network adapter
+
+Additional practical exercises included Microsoft 365 licensing, Windows service troubleshooting and Print Spooler recovery.
 
 ## Environment
 
@@ -95,4 +101,4 @@ All incidents were performed in a controlled lab environment using test accounts
 
 ## Security and Privacy
 
-Screenshots and documentation published in this repository are sanitised to remove tenant identifiers, account information and other environment-specific data.
+Documentation published in this repository has been written to avoid exposing tenant identifiers, account information and other environment-specific data.
